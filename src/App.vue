@@ -41,7 +41,7 @@ export default {
 *{
   box-sizing: border-box;
   list-style: none;
-  cursor: pointer;
+  cursor:pointer;
 }
 .container{
   width: 60%;
