@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="book">
-        <h3>Book an appointment</h3>
+        <h3>Book an appointment!</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Sed quis mollitia iure laborum maxime officiis nesciunt a iste dolore nostrum corrupti facilis, 
             cupiditate suscipit blanditiis est totam. Corrupti, inventore amet?
@@ -59,13 +59,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+
 .row{
     display: flex;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 20px;
     align-items:center;
 }
+
 .flex1{
     width: 50%;
     margin: 0;
@@ -109,14 +112,14 @@ export default {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 10px;
-    align-items:center;
+    margin-top: 20px;
 }
 
 .card{
     width: 32%;
     height: 220px;
     padding: 20px 40px;
+    margin: 2%;
     text-align: center;
     border-radius: 5px;
     border-left: 1px solid #eee;
@@ -146,12 +149,11 @@ export default {
 .box{
     display: flex;
     width: 100%;
-    margin-top: 30px;
+    margin: 30px 0 20px;
     align-items:center;
-    padding: 15px 35px 15px 60px;
+    padding: 15px 20px;
     background-color: rgb(250, 218, 250);
     border-radius: 3px;
-    margin-bottom: 20px;
 }
 
 .myflex1{
@@ -182,5 +184,58 @@ export default {
 
 h2{
     margin-bottom: -5px;
+}
+
+@media (max-width: 768px){
+    .row{
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .flex1{
+        width: 100%;
+        margin: 0;
+        padding-right: 10px;
+        margin-bottom: 30px;
+    } 
+
+    .flex2{
+        width: 100%;
+        margin: 0;
+        padding-left: 10px;
+        margin-top: 15px;
+    }
+
+    .book{
+        text-align: justify;
+        padding: 0 20px;
+        margin: 60px 0 30px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%;
+        height: 32%;
+        margin-top: 10px;
+        padding: 30px 40px;     
+    }
+
+    .box{
+        width: 100%;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px;
+    }
+
+    .myflex1, .myflex2{
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 </style>

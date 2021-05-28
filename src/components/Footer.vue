@@ -29,8 +29,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+
 .footer{
     display: flex;
     justify-content: space-between;
@@ -62,5 +68,26 @@ export default {
 i{
     margin-left: 10px;
     margin-right: 20px;
+}
+
+@media (max-width: 1068px){
+    .footer{
+        flex-direction: column;
+        align-items: stretch;
+        height:100%;
+        padding: 30px 10%;
+        margin-top: 30px;
+    }
+    
+    .foot1, .foot2, .foot3{
+        width: 100%;
+        height: 32%;
+        margin-top: 10px;
+        text-align: justify;
+    }
+
+    i{
+        font-size: 0.9rem;
+    }
 }
 </style>
