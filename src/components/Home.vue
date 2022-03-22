@@ -1,50 +1,52 @@
 <template>
-    <div class="row">
-        <div class="flex1">
-            <h1> {{ title }} </h1>
-            <p>Finding the right therapist can often be a lengthy and challenging process, and some people may not know where to begin.</p>
-            <button class="btn">Book an appointment</button>
+    <section>
+        <div class="row">
+            <div class="flex1">
+                <h1> {{ title }} </h1>
+                <p>Finding the right therapist can often be a lengthy and challenging process, and some people may not know where to begin.</p>
+                <button class="btn">Book an appointment</button>
+            </div>
+            <div class="flex2">
+                <img src="../assets/hms-image.svg" alt="image" class="image">
+            </div>
         </div>
-        <div class="flex2">
-            <img src="../assets/hms-image.svg" alt="image" class="image">
-        </div>
-    </div>
-    <div class="book">
-        <h3>Book an appointment!</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Sed quis mollitia iure laborum maxime officiis nesciunt a iste dolore nostrum corrupti facilis, 
-            cupiditate suscipit blanditiis est totam. Corrupti, inventore amet?
-        </p>
-    </div>
-    <div class="cards">
-        <div class="card">
-            <h4 class="card-title"> Individual Therapy</h4>
-            <p class="card-text">Book a one on one session with a professional.</p>
-            <button class="btn-c"> Learn more</button>
-        </div>
-        <div class="card">
-            <h4 class="card-title"> Couple Therapy</h4>
-            <p class="card-text">Book a session with your spouse with a professional.</p>
-            <button class="btn-c"> Learn more</button>
-        </div>
-        <div class="card">
-            <h4 class="card-title"> Group Therapy</h4>
-            <p class="card-text">Book an appointment for a group therapy session.</p>
-            <button class="btn-c"> Learn more</button>
-        </div>
-    </div>
-    <div class="box">
-        <div class="myflex1">
-            <h2> {{ msg }}</h2>
-            <p>Every now and again, there is always a storm we need to battle.
-                We are strong alone but we are much stronger together. 
-                Let's fix it together then.
+        <div class="book">
+            <h3>Book an appointment!</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Sed quis mollitia iure laborum maxime officiis nesciunt a iste dolore nostrum corrupti facilis, 
+                cupiditate suscipit blanditiis est totam. Corrupti, inventore amet?
             </p>
         </div>
-        <div class="myflex2">
-            <button class="btn-b">Talk to Us</button>
+        <div class="cards">
+            <div class="card">
+                <h4 class="card-title"> Individual Therapy</h4>
+                <p class="card-text">Book a one on one session with a professional.</p>
+                <button class="btn-c"> Learn more</button>
+            </div>
+            <div class="card">
+                <h4 class="card-title"> Couple Therapy</h4>
+                <p class="card-text">Book a session with your spouse with a professional.</p>
+                <button class="btn-c"> Learn more</button>
+            </div>
+            <div class="card">
+                <h4 class="card-title"> Group Therapy</h4>
+                <p class="card-text">Book an appointment for a group therapy session.</p>
+                <button class="btn-c"> Learn more</button>
+            </div>
         </div>
-    </div>
+        <div class="box">
+            <div class="myflex1">
+                <h2> {{ msg }}</h2>
+                <p>Every now and again, there is always a storm we need to battle.
+                    We are strong alone but we are much stronger together. 
+                    Let's fix it together then.
+                </p>
+            </div>
+            <div class="myflex2">
+                <button class="btn-b">Talk to Us</button>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -61,6 +63,15 @@ export default {
 
 <style scoped>
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+
+*{
+    box-sizing:border-box;
+}
+
+section{
+    width: 70%;
+    margin: 40px auto;
+}
 
 .row{
     display: flex;
@@ -116,14 +127,13 @@ export default {
 }
 
 .card{
-    width: 32%;
+    width: 31%;
     height: 220px;
     padding: 20px 40px;
-    margin: 2%;
     text-align: center;
     border-radius: 5px;
-    border-left: 1px solid #eee;
-    box-shadow: 3px 3px 3px #eee,3px 3px 3px #eee;
+    border-left: 1px solid #ddd;
+    box-shadow: 3px 3px 3px #ddd,3px 3px 3px #ddd;
 }
 
 .card-title{
@@ -151,9 +161,9 @@ export default {
     width: 100%;
     margin: 30px 0 20px;
     align-items:center;
-    padding: 15px 20px;
+    padding: 25px;
     background-color: rgb(250, 218, 250);
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .myflex1{

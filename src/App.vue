@@ -1,20 +1,24 @@
 <template>
-  <div class="container">
-    <img src="" alt="logo" class="logo">
-    <nav class="nav" id="nav">
-      <ul id="list">
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Testimonials</li>
-        <li>Contact Us</li>
-      </ul>
-    </nav>
-    <i class="bi bi-list" @click="showNav" id="show"></i>
-    <i class="bi bi-x" @click="closeNav" id="close"></i>
-    <br/>
+    <section>
+    <header>
+      <div class="container">
+        <img src="" alt="logo" class="logo">
+        <nav id="nav">
+          <ul id="list">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Testimonials</li>
+            <li>Contact Us</li>
+          </ul>
+        </nav>
+        <i class="bi bi-list" @click="showNav" id="show"></i>
+        <i class="bi bi-x" @click="closeNav" id="close"></i>
+        <br/>
+      </div>
+    </header>
     <Home />
-  </div>
     <Footer />
+  </section>
 </template>
 
 <script>
@@ -47,11 +51,10 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 #app {
-  font-family:'Times New Roman', Times, serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #1f1f1f;
+  font-family: 'Poppins', sans-serif;
 }
 
 *{
@@ -59,29 +62,40 @@ export default {
   list-style: none;
   cursor:pointer;
 }
-.container{
-  width: 60%;
-  margin: 0 auto;
+
+header{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-shadow: 3px 3px 3px #ddd,3px 3px 3px #ddd;
 }
+
+.container{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo{
-  float: left;
-  margin-bottom: 5px;
+  width: 25%;
   margin-left: 10px;
 }
-.nav{
-  margin-top:0;
-  margin-bottom:20px;
-  float: right;
+
+nav{
+  width: 70%;
 }
-.nav ul li{
+
+nav ul li{
+  padding: 10px;
+  margin-right: 50px;
   display: inline; 
-  margin-right: 30px;
   color: rgb(99, 176, 243);
 }
 
 nav ul li:hover{
   background-color: white;
-  padding: 10px;
   border-radius: 15px;
   box-shadow: 1px 1px 1px #eee;
 }
